@@ -15,5 +15,6 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
       MYSQL_DATABASE: waker_development
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
   cache:
     image: redis
