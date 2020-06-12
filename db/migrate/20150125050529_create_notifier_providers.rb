@@ -1,4 +1,4 @@
-class CreateNotifierProviders < ActiveRecord::Migration
+class CreateNotifierProviders < ActiveRecord::Migration[5.0]
   def change
     create_table :notifier_providers do |t|
       t.string :name

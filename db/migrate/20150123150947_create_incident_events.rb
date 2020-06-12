@@ -1,4 +1,4 @@
-class CreateIncidentEvents < ActiveRecord::Migration
+class CreateIncidentEvents < ActiveRecord::Migration[5.0]
   def change
     create_table :incident_events do |t|
       t.references :incident, index: true

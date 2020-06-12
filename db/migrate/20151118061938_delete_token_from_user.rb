@@ -1,4 +1,4 @@
-class DeleteTokenFromUser < ActiveRecord::Migration
+class DeleteTokenFromUser < ActiveRecord::Migration[5.0]
   def change
     User.all.each do |u|
       if u.token

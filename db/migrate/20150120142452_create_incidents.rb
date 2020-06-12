@@ -1,4 +1,4 @@
-class CreateIncidents < ActiveRecord::Migration
+class CreateIncidents < ActiveRecord::Migration[5.0]
   def change
     create_table :incidents do |t|
       t.string :subject

@@ -1,4 +1,4 @@
-class AddFilterToMaintenance < ActiveRecord::Migration
+class AddFilterToMaintenance < ActiveRecord::Migration[5.0]
   def change
     add_column :maintenances, :filter, :string
   end

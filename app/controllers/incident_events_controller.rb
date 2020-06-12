@@ -1,7 +1,9 @@
 require 'securerandom'
 
 class IncidentEventsController < ApplicationController
-  skip_before_action :login_required, only: [:twilio]
+  if ENV["GOOGLE_CLIENT_ID"]
+    skip_before_action :login_required, only: [:twilio]
+  end
 
   def twilio
     @event = IncidentEvent.find(params[:id])

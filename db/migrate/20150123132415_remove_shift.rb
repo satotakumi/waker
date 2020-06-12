@@ -1,4 +1,4 @@
-class RemoveShift < ActiveRecord::Migration
+class RemoveShift < ActiveRecord::Migration[5.0]
   def change
     drop_table :shifts
   end

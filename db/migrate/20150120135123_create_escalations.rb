@@ -1,4 +1,4 @@
-class CreateEscalations < ActiveRecord::Migration
+class CreateEscalations < ActiveRecord::Migration[5.0]
   def change
     create_table :escalations do |t|
       t.references :escalate_to, index: true

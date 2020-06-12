@@ -47,6 +47,23 @@ gem 'google-api-client', '~> 0.7.1'
 
 gem 'foreman'
 
+gem 'web-console'
+gem 'byebug'
+
+# Access an IRB console on exception pages or by using <%= console %> in views
+
+# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+gem 'spring'
+
+gem 'rspec-rails'
+
+gem 'database_rewinder'
+
+gem 'pry-byebug'
+gem 'dotenv-rails'
+gem 'factory_bot_rails'
+gem 'rubocop', require: false
+
 group :development do
   gem 'web-console'
 end
